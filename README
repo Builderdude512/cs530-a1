@@ -1,0 +1,29 @@
+Files Manifest:
+    makefile
+    main.cpp
+    xed.cpp
+
+Compile Instructions:
+    Run 'make' from the project root directory.
+    This will output the 'xed' executable.
+
+Operating Instructions:
+    Usage: xed [-b] filename
+        -b -- output as binary.
+
+Design Features:
+    Core functionality is two functions that print a single line,
+    one for binary and one for hex. These are called by two functions
+    that repeatably call those two line functions. The main function 
+    serves as something to choose whether it goes towards the binary
+    or hex route.
+
+Extra:
+    I had to manually write a print to binary function as printf()
+    did not have such a formater.
+
+Lessons Learned:
+    * How to open read a file.
+    * How to read the file chunk by chunk.
+    * How to output data into different formats.
+    * How to make a makefile.
